@@ -109,7 +109,7 @@ namespace Calculator
         public static string value(string values)
         {
             bool valid;
-            int a = 0, b = 0, c = 0;
+            double a = 0, b = 0, c = 0;
 
             //getting a, b and c value
             do
@@ -117,7 +117,7 @@ namespace Calculator
                 Console.WriteLine("What is your a value");
                 try
                 {
-                    Int32.TryParse(Console.ReadLine(), out a);
+                    a = Convert.ToDouble(Console.ReadLine());
                     valid = true;
                 }
                 catch (InvalidCastException e)
@@ -131,7 +131,7 @@ namespace Calculator
                 Console.WriteLine("What is your b value");
                 try
                 {
-                    Int32.TryParse(Console.ReadLine(), out b);
+                    b = Convert.ToDouble(Console.ReadLine());
                     valid = true;
                 }
                 catch (InvalidCastException e)
@@ -145,7 +145,7 @@ namespace Calculator
                 Console.WriteLine("What is your c value");
                 try
                 {
-                    Int32.TryParse(Console.ReadLine(), out c);
+                    c = Convert.ToDouble(Console.ReadLine());
                     valid = true;
                 }
                 catch (InvalidCastException e)
