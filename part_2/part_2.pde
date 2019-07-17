@@ -1,6 +1,6 @@
 //variables
 int counter = 0, xLoc;
-PImage hypnotize, nazi;
+PImage hypnotize, nazi, snow, control, hijacked, room101;
 
 void setup() {
   size(750, 750);
@@ -97,21 +97,39 @@ void people() {
 }  
 
 void bb() {
+  //image
+  imageMode(CORNER);
+  hijacked = loadImage("peeta.gif");
+  image(hijacked, 10, 200, 300, 300);
+  room101 = loadImage("room101.jpg");
+  image(room101, 400, 275, 290, 250);
   //text
-  fill(#FC03AA);
+  fill(0);
   textSize(20);
   text("Symbolism of Big Brother, brainwashing/hypnotizing the citizens", 50, 650);
   text("Has control and power, higher up", 225, 50);
+  text("Anyone could be Big Brother today, person in power", 25, 155);
+  text("Use fear and hatred to brainwash", 350, 250);
+  text("Winston was brainwashed in room101", 10, 550);
+  text("Peeta was hijacked by the capitol", 10, 575);
 }
 
 void person() {
-  fill(#03FCCC);
+  //image
+  imageMode(CORNER);
+  control = loadImage("Marionette.png");
+  image(control, 25, 225, 300, 400);
+  //text
+  fill(0);
   textSize(20);
   text("People, citizens who are manipulated by the party", 50, 50);
   text("heads are empty", 350, 150);
   text("They'll split your pretty cranium, and fill it full of air-1984 by David Bowie", 10, 650);
   textSize(30);
   text("Follow orders", 400, 500);
+  textSize(20);
+  text("Have no emotion or personal thoughts", 25, 200);
+  text("People do not think or choose themselves", 315, 375);
 }
 
 void propaganda() {
@@ -119,12 +137,15 @@ void propaganda() {
   imageMode(CORNER);
   nazi = loadImage("nazi propaganda.jpg");
   image(nazi, 50, 250, 250, 200);
+  snow = loadImage("h.g.prop.jpg");
+  image(snow, 350, 250, 300, 350);
   //text
-  fill(#FC0303);
+  fill(0);
   textSize(35);
   text("WW2, Nazi Propaganda", 150, 50);
   textSize(18);
-  text("Snow's Propaganda", 500, 600);
+  text("Snow's Propaganda", 500, 650);
   textSize(15);
   text("War is peace, freedom is slavery, ignorance is strength-1984 by George Orwell", 100, 200);
+  text("convincing and manipulating that it is the only option for peace", 5, 700);
 }
